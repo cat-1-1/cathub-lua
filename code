@@ -100,12 +100,6 @@ TrollingGuis:AddButton({
   	end    
 })
 
-TrollingGuis:AddButton({
-	Name = "Brookhaven Trolling GUI",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
-  	end    
-})
 
 TrollingGuis:AddButton({
 	Name = "Kat Fucker",
@@ -192,6 +186,7 @@ Default = <number> - The default value of the slider.
 ValueName = <string> - The text after the value number.
 Callback = <function> - The function of the slider.
 ]]
+
 
 
 
