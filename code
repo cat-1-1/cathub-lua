@@ -1,3 +1,8 @@
+if game.PlaceId = 17530851583 then
+	game.Players.LocalPlayer:Kick()
+end
+
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Cat Hub [FUCK YEAH!!!]", HidePremium = false, IntroIcon = "rbxassetid://17616146842", IntroText = "Cat Hub", SaveConfig = false, ConfigFolder = "Cat Hub Orion"})
@@ -193,8 +198,6 @@ ValueName = <string> - The text after the value number.
 Callback = <function> - The function of the slider.
 ]]
 
-if game.PlaceId = 17530851583 then
-	game.Players.LocalPlayer:Kick()
-end
+
 
 OrionLib:Init()
