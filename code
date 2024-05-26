@@ -1,6 +1,6 @@
 if game.PlaceId = 17530851583 then
 	game.Players.LocalPlayer:Kick()
-end
+
 
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
