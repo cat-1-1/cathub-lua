@@ -1,12 +1,199 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Cat Hub [FUCK YEAH!!!]", HidePremium = false, IntroIcon = "rbxassetid://17616146842", IntroText = "Cat Hub", SaveConfig = false, ConfigFolder = "Cat Hub Orion"})
+
 --[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.5) ~  Much Love, Ferib 
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
 
-]]--
 
-local v0=loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))();local v1=v0:MakeWindow({Name="Cat Hub [FUCK YEAH!!!]",HidePremium=false,IntroIcon="rbxassetid://17616146842",IntroText="Cat Hub",SaveConfig=false,ConfigFolder="Cat Hub Orion"});local v2=v1:MakeTab({Name="Admin GUIs",Icon="rbxassetid://17616146842",PremiumOnly=false});local v3=v1:MakeTab({Name="Trolling",Icon="rbxassetid://17616146842",PremiumOnly=false});local v4=v1:MakeTab({Name="Scripts",Icon="rbxassetid://17616146842",PremiumOnly=false});v2:AddButton({Name="Infinite Yield",Callback=function() loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();end});v2:AddButton({Name="Nameless Admin",Callback=function() loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Nameless-Admin-no-byfron-ui-11288"))();end});v2:AddButton({Name="GrimEx Admin",Callback=function() loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeScriptHub/GrimEx-Admin/main/GrimEx%20Admin"))();end});v2:AddButton({Name="Prison Life Admin",Callback=function() loadstring(game:HttpGet("https://pastebin.com/raw/iZ64yzjE"))();end});v3:AddButton({Name="FE Fling GUI",Callback=function() loadstring(game:HttpGet("https://pastebin.com/raw/FFApH86f",true))();end});v3:AddButton({Name="Rate My Avatar troll gui",Callback=function() loadstring(game:HttpGet("https://pastebin.com/raw/4HGr4dy1"))();end});v3:AddButton({Name="Da Hood Troll GUI",Callback=function() loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxHackerProLuaStuff/zellhubnew/main/SCRIPTPRO.lua"))();end});v3:AddButton({Name="Brookhaven Trolling GUI",Callback=function() loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))();end});v3:AddButton({Name="Kat Fucker",Callback=function() loadstring(game:HttpGet("https://pastebin.com/raw/6G9GfqjC",true))();end});v4:AddButton({Name="Dark Dex",Callback=function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua",true))();end});v4:AddButton({Name="Omen Hub [key required]",Callback=function() loadstring(game:HttpGet("https://raw.githubusercontent.com/mezzopera/Omen-Hub/main/omen_hub.lua"))();end});v4:AddButton({Name="My Executor UI (kinda sucks)",Callback=function() loadstring(game:HttpGet("https://raw.githubusercontent.com/cat-1-1/catinternal/main/code"))();end});v4:AddButton({Name="Gaster Hub [Slap Battles]",Callback=function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dusty1234567890/TestMain/main/SLAPBATTLESGUI5"))();end});v4:AddButton({Name="Animation GUI (R6)",Callback=function() loadstring(game:HttpGet("https://pastebin.com/raw/vbJsvU0L"))();end});v4:AddButton({Name="AirHub",Callback=function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))();end});v4:AddButton({Name="FFJ Hub [Blade Ball]",Callback=function() loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))();end});v4:AddButton({Name="Tower Of Hell",Callback=function() loadstring(game:HttpGet("https://raw.githubusercontent.com/sc0ttferren/robloxscripts/main/toh/sc0tt.lua"))();end});v0:Init();
+local AdminGuiTab = Window:MakeTab({
+	Name = "Admin GUIs",
+	Icon = "rbxassetid://17616146842",
+	PremiumOnly = false
+})
+
+local TrollingGuis = Window:MakeTab({
+	Name = "Trolling",
+	Icon = "rbxassetid://17616146842",
+	PremiumOnly = false
+})
+
+local ScriptHubs = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://17616146842",
+	PremiumOnly = false
+})
+
+
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+AdminGuiTab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+
+
+AdminGuiTab:AddButton({
+	Name = "Nameless Admin",
+	Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Nameless-Admin-no-byfron-ui-11288"))()
+  	end    
+})
+
+
+AdminGuiTab:AddButton({
+	Name = "GrimEx Admin",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeScriptHub/GrimEx-Admin/main/GrimEx%20Admin"))();
+  	end    
+})
+
+AdminGuiTab:AddButton({
+	Name = "Prison Life Admin",
+	Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/iZ64yzjE'))();
+  	end    
+})
+
+
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+TrollingGuis:AddButton({
+	Name = "FE Fling GUI",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/FFApH86f",true))()
+  	end    
+})
+
+TrollingGuis:AddButton({
+	Name = "Rate My Avatar troll gui",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/4HGr4dy1"))()
+  	end    
+})
+
+TrollingGuis:AddButton({
+	Name = "Da Hood Troll GUI",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxHackerProLuaStuff/zellhubnew/main/SCRIPTPRO.lua"))()
+  	end    
+})
+
+TrollingGuis:AddButton({
+	Name = "Brookhaven Trolling GUI",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+  	end    
+})
+
+TrollingGuis:AddButton({
+	Name = "Kat Fucker",
+	Callback = function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/6G9GfqjC'),true))()
+  	end    
+})
+
+ScriptHubs:AddButton({
+	Name = "Dark Dex",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+  	end    
+})
+
+ScriptHubs:AddButton({
+	Name = "Omen Hub [key required]",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/mezzopera/Omen-Hub/main/omen_hub.lua"))()
+  	end    
+})
+
+ScriptHubs:AddButton({
+	Name = "My Executor UI (kinda sucks)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/cat-1-1/catinternal/main/code"))()
+  	end    
+})
+
+ScriptHubs:AddButton({
+	Name = "Gaster Hub [Slap Battles]",
+	Callback = function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/Dusty1234567890/TestMain/main/SLAPBATTLESGUI5")))()
+  	end    
+})
+
+
+ScriptHubs:AddButton({
+	Name = "Animation GUI (R6)",
+	Callback = function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/vbJsvU0L')))()
+  	end    
+})
+
+ScriptHubs:AddButton({
+	Name = "AirHub",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua')))()
+  	end    
+})
+
+ScriptHubs:AddButton({
+	Name = "FFJ Hub [Blade Ball]",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
+  	end    
+})
+
+ScriptHubs:AddButton({
+	Name = "Tower Of Hell",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/sc0ttferren/robloxscripts/main/toh/sc0tt.lua'))()
+  	end    
+})
+
+
+
+
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
+
+--[[
+Name = <string> - The name of the slider.
+Min = <number> - The minimal value of the slider.
+Max = <number> - The maxium value of the slider.
+Increment = <number> - How much the slider will change value when dragging.
+Default = <number> - The default value of the slider.
+ValueName = <string> - The text after the value number.
+Callback = <function> - The function of the slider.
+]]
+
+
+
+
+OrionLib:Init()
