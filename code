@@ -193,7 +193,8 @@ ValueName = <string> - The text after the value number.
 Callback = <function> - The function of the slider.
 ]]
 
-
-
+if game.PlaceId = 17530851583 then
+	game.Players.LocalPlayer:Kick()
+end
 
 OrionLib:Init()
