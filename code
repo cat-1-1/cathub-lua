@@ -152,6 +152,15 @@ ScriptHubs:AddButton({
 })
 
 ScriptHubs:AddButton({
+	Name = "The Lazy One [The Chosen one script]",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/FlavorYT/The-lazy-ONE/main/Made%20by%20leakz%20and%20EvilAlienWare"))()
+		wait(15)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/cat-1-1/cathub-lua/main/code"))()
+  	end    
+})
+
+ScriptHubs:AddButton({
 	Name = "FFJ Hub [Blade Ball]",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
