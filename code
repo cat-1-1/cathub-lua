@@ -108,6 +108,13 @@ TrollingGuis:AddButton({
   	end    
 })
 
+TrollingGuis:AddButton({
+	Name = "Slap Battles Troll GUI",
+	Callback = function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/184YHC1V'),true))() 
+  	end    
+})
+
 ScriptHubs:AddButton({
 	Name = "Dark Dex",
 	Callback = function()
@@ -151,14 +158,6 @@ ScriptHubs:AddButton({
   	end    
 })
 
-ScriptHubs:AddButton({
-	Name = "The Lazy One [The Chosen one script]",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/FlavorYT/The-lazy-ONE/main/Made%20by%20leakz%20and%20EvilAlienWare"))()
-		wait(15)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/cat-1-1/cathub-lua/main/code"))()
-  	end    
-})
 
 ScriptHubs:AddButton({
 	Name = "FFJ Hub [Blade Ball]",
@@ -171,6 +170,13 @@ ScriptHubs:AddButton({
 	Name = "Tower Of Hell",
 	Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/sc0ttferren/robloxscripts/main/toh/sc0tt.lua'))()
+  	end    
+})
+
+ScriptHubs:AddButton({
+	Name = "REDz Hub [BrookHaven]",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))()
   	end    
 })
 
